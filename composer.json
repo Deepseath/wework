@@ -1,0 +1,44 @@
+{
+    "name": "deepseath/wechat",
+    "description": "企业微信SDK",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^7.1.3",
+        "ext-SimpleXML": "*",
+        "ext-dom": "*",
+        "ext-json": "*",
+        "ext-openssl": "*",
+        "doctrine/collections": "^1.5",
+        "guzzlehttp/guzzle": "^6.3",
+        "monolog/monolog": "^1.23",
+        "symfony/cache": "^4.1",
+        "symfony/dependency-injection": "^4.1",
+        "symfony/http-foundation": "^4.1"
+    },
+    "require-dev": {
+        "mikey179/vfsStream": "^1.6",
+        "mockery/mockery": "^1.1",
+        "phpunit/phpunit": "^6"
+    },
+    "autoload": {
+        "psr-4": {
+            "WeWork\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "WeWork\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "WeWork\\Laravel\\WeWorkServiceProvider"
+            ]
+        }
+    }
+}
