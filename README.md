@@ -18,7 +18,7 @@
 ## Installation
 
 ```bash
-composer require pithyone/wechat
+composer require deepseath/wework
 ```
 
 ## License
