@@ -44,6 +44,7 @@ class App extends ContainerBuilder
         'message'    => Api\Message::class,
         'tag'        => Api\Tag::class,
         'user'       => Api\User::class,
+        'linkedCorp' => Api\LinkedCorp::class,
     ];
 
     /**
